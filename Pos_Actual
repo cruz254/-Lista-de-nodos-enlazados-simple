@@ -1,0 +1,48 @@
+#inks https://repl.it/DbyJ
+
+class Nodo:
+	def __init__ (self, valor):
+		self.info = valor
+		self.sig = None
+	
+# CLASE LISTA
+class Lista:
+	
+	# CONSTRUCTOR
+	def __init__ (self):
+		self.__primero = None
+		self.__ultimo = None
+		self.__actual = None
+		self.__n = 0
+		self.__pos = 0
+
+	# Metodo para ubicar el actual en la posicion "pos" (enviada por parametro)
+	def pos_actual(self, pos):
+		nodo = self.__primero
+		cont=0
+		if (pos > self.__n):
+			self.__actual=self.__ultimo
+			self.__pos=self.__n
+			return
+		while ( nodo != None):
+			if (cont == pos):
+				self.__actual = nodo
+				self.__pos=pos
+				return
+			nodo = nodo.sig
+			cont = cont +1
+			
+	def mostrar_actual(self):
+		print "\n\n"
+		return (self.__actual.info,self.__pos)
+		print "\n\n"
+	
+l=Lista()
+l.insertar_inicio(5)
+l.insertar_inicio(4)
+l.insertar_inicio(3)
+l.insertar_inicio(6)
+l.insertar_inicio(4)
+l.mostrar()
+l.pos_actual(1)
+print (l.mostrar_actual())
