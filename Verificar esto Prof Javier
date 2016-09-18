@@ -1,0 +1,19 @@
+# Links https://repl.it/Dbyb/1
+
+nota1 = 100
+nota2 = 200
+nota3 = 300
+
+print "\nla nota 1 es : ",nota1
+print "la nota 2 es : ",nota2
+print "la nota 3 es : ",nota3
+
+#  Prueba para el prof javier  
+
+nota1 = nota2 = nota3 = 0 
+
+print "\nnota1 = nota2 = nota3 = 0 Si se puede colocar de esta forma :D !!! :P "
+
+print "\nla nota 1 es : ",nota1
+print "la nota 2 es : ",nota2
+print "la nota 3 es : ",nota3
